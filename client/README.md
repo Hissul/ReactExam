@@ -30,3 +30,7 @@ npm i @prisma/adapter-pg - ОРМ
         npx prisma migrate reset - удаляет и заново создает БД
 
 npm install --save express-async-handler - для обработки исключений внутри асинхронных экспресс-маршрутов
+
+npm i argon2 - хеширование паролей 
+
+npm i jsonwebtoken - для создания токена
