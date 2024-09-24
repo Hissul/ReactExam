@@ -1,5 +1,6 @@
 # React + Vite
 
+<!-- КЛИЕНТ -->
 npm install -D sass-embedded 
 
 npm install react-icons --save
@@ -18,7 +19,7 @@ npm i js-cookie
 
 
 
-
+<!-- СЕРВЕР -->
 npm i dotenv - для работы с .env
 
 npm i morgan - логирование http запросов
@@ -34,3 +35,5 @@ npm install --save express-async-handler - для обработки исклю�
 npm i argon2 - хеширование паролей 
 
 npm i jsonwebtoken - для создания токена
+
+npm install cors - 

@@ -1,6 +1,6 @@
-import { useForm } from "react-hook-form";
-import { useState } from "react";
 import { useMutation } from '@tanstack/react-query'
+import { useState } from 'react'
+import { useForm } from 'react-hook-form'
 
 import Layout from "../../layout/Layout";
 import Button from "../../ui/button/Button";
@@ -33,16 +33,15 @@ const Auth = () => {
 		mode: 'onChange'
 	})
 
-	const { mutate, isLoading } = useMutation(
-		['auth'],
-		({ email, password }) => AuthService.main(email, password, type),
-		{
-			onSuccess: data => {
-				alert('success')
-				reset()
-			}
+	const {mutate, isLoading} = useMutation({
+		mutationKey: ['auth'],
+		mutationFn: ({email, password}) => {AuthService.main(email, password, 
+		type)},
+		onSuccess: (data) => {
+		  alert('success')
+		  reset()
 		}
-	)
+	  })
 
 	const onSubmit = data => {
 		mutate(data)
@@ -77,8 +76,8 @@ const Auth = () => {
 					/>
 
 					<div className={styles.wrapperButtons}>
-						<Button clickHandler={() => setType('login')}>Sign in</Button>
-						<Button clickHandler={() => setType('register')}>Sign up</Button>
+						<Button clickHandler={() => setType('login')}>Login</Button>
+						<Button clickHandler={() => setType('register')}>Register</Button>
 					</div>
 				</form>
 			</div>
