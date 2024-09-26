@@ -16,7 +16,7 @@ const Hamburger = () => {
             {/* <FaAlignRight color='white'/> */}
         </button>
 
-        <Menu isShow={isShow}/>
+        <Menu isShow={isShow} setIsShow={setIsShow} />
     </div>
 }
 
