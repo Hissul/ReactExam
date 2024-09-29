@@ -3,7 +3,7 @@ import Layout from "../../layout/Layout";
 const NewWorkout = () => {
     return (
         <>
-          <Layout heading="New Workout" bgImage='/images/ex-bg-1.jpg' />
+          <Layout heading="New Workout" bgImage='/images/workout-ex.jpg' />
           <div className="wrapper-inner-page">Your workout here</div>
         </>
       );
